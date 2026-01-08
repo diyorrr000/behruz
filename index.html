@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirin Osh - Online Buyurtma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Shirin<span>Osh</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Bosh Sahifa</a></li>
+                <li><a href="#menu">Menyu</a></li>
+                <li><a href="#about">Biz Haqimizda</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li class="cart-icon"><a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Shirin Osh Restorani</h1>
+                <p>An'anaviy va Zamonaviy Taomlar - Bir Muncha Maza!</p>
+                <a href="#menu" class="btn">Menyuni Ko'rish</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menyumiz</h2>
+            <p class="section-subtitle">Eng mazali va yangi taomlar</p>
+            
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">Hammasi</button>
+                <button class="filter-btn" data-filter="milliy">Milliy Taomlar</button>
+                <button class="filter-btn" data-filter="fastfood">Fast Food</button>
+                <button class="filter-btn" data-filter="ichimlik">Ichimliklar</button>
+                <button class="filter-btn" data-filter="desert">Desertlar</button>
+            </div>
+            
+            <div class="menu-items" id="menu-items">
+                <!-- Menu items will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Biz Haqimizda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>20 Yillik Tajriba</h3>
+                    <p>Shirin Osh restorani 2006-yildan beri xizmat ko'rsatmoqda. Biz an'anaviy o'zbek taomlarini zamonaviy uslubda taqdim etamiz.</p>
+                    <p>Barcha taomlarimiz yangi va organik mahsulotlardan tayyorlanadi. Bizning oshpazlarimiz O'zbekistonning eng yaxshi oshpazlari hisoblanadi.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Tabiiy mahsulotlar</li>
+                        <li><i class="fas fa-check"></i> Tez yetkazib berish</li>
+                        <li><i class="fas fa-check"></i> 24/7 ishlaymiz</li>
+                        <li><i class="fas fa-check"></i> Yuqori sifat</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Restoran interyeri">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Bog'lanish</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Manzil</h3>
+                            <p>Toshkent shahar, Yunusobod tumani</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+998 90 123 45 67</p>
+                            <p>+998 71 234 56 78</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Ish Vaqti</h3>
+                            <p>Har kuni: 09:00 - 23:00</p>
+                            <p>Dam olish kunlari: 10:00 - 00:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@shirinosh.uz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Xarita">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Shirin<span>Osh</span></a>
+                    <p>Eng mazali taomlar faqat bizda!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Tez Havolalar</h3>
+                    <ul>
+                        <li><a href="#home">Bosh Sahifa</a></li>
+                        <li><a href="#menu">Menyu</a></li>
+                        <li><a href="#about">Biz Haqimizda</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Yangiliklarga Obuna Bo'ling</h3>
+                    <p>Yangi taomlar va aksiyalar haqida xabardor bo'ling</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Email manzilingiz" required>
+                        <button type="submit" class="btn">Obuna bo'lish</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shirin Osh Restorani. Barcha huquqlar himoyalangan.</p>
+                <p>Muallif: <strong>Bekhruz</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Buyurtma Berish</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="customer-name">Ismingiz *</label>
+                    <input type="text" id="customer-name" required placeholder="Ismingizni kiriting">
+                </div>
+                <div class="form-group">
+                    <label for="customer-phone">Telefon Raqamingiz *</label>
+                    <input type="tel" id="customer-phone" required placeholder="+998 90 123 45 67">
+                </div>
+                <div class="form-group">
+                    <label for="customer-address">Manzilingiz *</label>
+                    <textarea id="customer-address" rows="3" required placeholder="To'liq manzilingizni kiriting"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="order-quantity">Miqdori</label>
+                    <input type="number" id="order-quantity" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="order-notes">Qo'shimcha izohlar</label>
+                    <textarea id="order-notes" rows="2" placeholder="Qo'shimcha talablaringiz bo'lsa..."></textarea>
+                </div>
+                <div class="order-summary">
+                    <h3>Buyurtma xulosasi:</h3>
+                    <p id="order-item-name"></p>
+                    <p id="order-item-price"></p>
+                </div>
+                <button type="submit" class="btn btn-submit">Buyurtmani Tasdiqlash</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal success-modal" id="success-modal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Buyurtmangiz qabul qilindi!</h2>
+            <p>Tez orada operator siz bilan bog'lanadi. Rahmat!</p>
+            <button class="btn" id="close-success-modal">Yopish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
